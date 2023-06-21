@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: drone-service
+  datasource:
+    url: jdbc:postgresql://host.docker.internal:5432/postgres
+    username: musala
+    password: musala123
+    driver-class-name: org.postgresql.Driver
+
+flyway:
+  url: jdbc:postgresql://host.docker.internal:5432/postgres
+  schemas: default
+  user: musala
+  password: musala123
